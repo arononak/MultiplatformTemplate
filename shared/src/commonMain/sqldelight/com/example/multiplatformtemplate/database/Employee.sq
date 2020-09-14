@@ -1,0 +1,17 @@
+CREATE TABLE employeeDb(
+  key INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  id TEXT NOT NULL,
+  employee_name TEXT NOT NULL,
+  employee_salary TEXT NOT NULL,
+  employee_age TEXT NOT NULL,
+  profile_image TEXT NOT NULL
+);
+
+insertItem:
+INSERT INTO employeeDb(id, employee_name, employee_salary, employee_age, profile_image) VALUES (?, ?, ?, ?, ?);
+
+selectAll:
+SELECT * FROM employeeDb ORDER BY id;
+
+deleteAll:
+DELETE FROM employeeDb;
